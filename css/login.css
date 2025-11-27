@@ -1,0 +1,72 @@
+body {
+    background: linear-gradient(135deg, #1e1e1e, #003566);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 380px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-top: 4px solid #007bff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #003566;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #000;
+}
+
+.form-control {
+    border-radius: 4px;
+}
+
+/* Validación visual */
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+.btn-custom {
+    width: 100%;
+    background-color: #007afd;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #001933;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000;
+}
+
+.footer-text a {
+    color: #003566;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
