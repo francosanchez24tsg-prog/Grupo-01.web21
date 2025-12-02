@@ -13,21 +13,37 @@
     <div class="logo">PC-COMPRAS</div>
 
     <form novalidate>
+        <!-- EMAIL -->
         <div class="mb-3">
             <label for="email" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="email" name="email"
-                placeholder="ejemplo@mail.com" required>
+            <input 
+                type="email" 
+                class="form-control" 
+                id="email" 
+                name="email"
+                placeholder="ejemplo@mail.com" 
+                required
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
             <div class="invalid-feedback">
-                Ingrese un correo válido.
+                Ingrese un correo electrónico válido.
             </div>
         </div>
 
+        <!-- CONTRASEÑA -->
         <div class="mb-3">
             <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="password" name="password"
-                placeholder="Ingrese su contraseña" required minlength="6">
+            <input 
+                type="password" 
+                class="form-control" 
+                id="password" 
+                name="password"
+                placeholder="Ingrese su contraseña" 
+                required
+                minlength="8"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$"
+                title="Debe contener: min. 8 caracteres, 1 mayúscula, 1 minúscula, 1 número y 1 símbolo.">
             <div class="invalid-feedback">
-                La contraseña debe tener al menos 6 caracteres.
+                La contraseña debe tener mínimo 8 caracteres, incluyendo mayúscula, minúscula, número y símbolo.
             </div>
         </div>
 

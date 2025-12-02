@@ -34,7 +34,7 @@ body {
     border-radius: 4px;
 }
 
-/* Validación visual */
+/* Validación visual HTML5 */
 input:invalid {
     border-color: red;
 }
@@ -49,6 +49,7 @@ input:valid {
     border: none;
     padding: 10px;
     font-weight: bold;
+    color: #fff;
 }
 
 .btn-custom:hover {
